@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/colosseum"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/night_colosseum"
+        />
+
+    <TextView
+        android:id="@+id/gfygyukvtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="200sp"
+        android:textColor="#FFFFFF"
+        android:text="The COLOSSEUM"
+        android:textSize="22dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image_photo"
+        android:textSize="17dp"
+        android:textColor="#999999"
+        android:layout_marginBottom="30dp"
+        android:text="one of the most recognizable sites in the world"
+        />
+
+    <ImageButton
+        android:id="@+id/image_photo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/colosseum"
+        app:srcCompat="@drawable/vector"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_id"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_id"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/oreooero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colosseum"
+        android:layout_marginTop="10dp"
+         />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colosseum"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/vvecotr"
+        />
+
+    <ImageView
+        android:id="@+id/image_kgz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_id"
+        android:src="@drawable/hohohho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:onClick="start_click"
+        android:layout_width="190dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_kgz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:text="Перейти"
+        android:background="#FF6363"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
